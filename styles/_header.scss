@@ -1,0 +1,165 @@
+body{
+	background: $clr-dark;
+	color: $clr-light;
+	font-family:$main-ff;
+	max-width:1440px;
+}
+
+header{
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	position: sticky;
+	top: 0;
+}
+
+@media only screen and(min-width: 767px){
+	header{
+		padding: 1.8em 3em 0em 3em;
+	}
+
+	.nav .hamburger{
+		display: none;
+	}
+
+	.nav{
+
+		&__link{
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			list-style: none;
+			&__item{
+			
+			a{
+				font-size: .9rem;
+				margin-right: 3em;
+				cursor: pointer;
+				@include link;
+			}
+
+				&:first-child{
+					font-weight: bold;
+				}
+
+			} 
+     }
+    }		
+}
+
+.logo{
+	text-transform: uppercase;
+	border: 0.5px solid $clr-light;
+	padding: .5em .7em;
+	margin-left: .7em;
+	font-size: .7rem;
+}
+
+//this section is for the JS toggle for the hamburger animation
+@media only screen and(max-width: 766px){
+	.nav{
+
+		.line1,.line2,.line3{
+			width: 30px;
+			height: 3px;
+			background:$clr-light;
+			margin:5px;
+			border-radius: 10px;
+		}
+
+		.hamburger{
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		&__link{
+			list-style-type: none;
+			height: 100vh;
+			width: 100%;
+			list-style-type: none;
+	    height: 100vh;
+	    width: 100%;
+	    left: 1%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+	    position: fixed;
+	    right: 200px;
+			clip-path:circle(100px at 90% -10%);
+	    -webkit-clip-path: circle(100px at 90% -10%);
+	    transition: all 1s ease-out;
+	    pointer-events:none;
+
+			&__item{
+				margin-bottom: 2em;
+
+				a{
+					color:$clr-light;
+					text-decoration:none;
+				}
+			}
+
+			li{
+				opacity: 0;
+			}
+
+			li:nth-child(1){
+				transition: all 0.5s ease-in 0.2s;
+			}
+
+			li:nth-child(2){
+				transition: all 0.5s ease-in 0.4s;
+			}
+
+			li:nth-child(3){
+				transition: all 0.5s ease-in 0.6s;
+			}
+
+			li:nth-child(4){
+				transition: all 0.5s ease-in 0.8s;
+			}
+
+			li.fade{
+  			opacity: 1;
+  		}
+		}
+	}
+
+	 .nav__link.open{
+    clip-path:circle(800px at 90% -10%);
+    -webkit-clip-path: circle(800px at 90% -10%);
+    pointer-events:all;
+    background:$clr-dark;
+
+    li{
+    	cursor: pointer;
+
+    	&:nth-child(1){
+    		font-weight: bold;
+    	}
+    	
+    }
+
+    // li{
+    // 	cursor: pointer;
+    // }
+  }
+
+  .line1.rotateDown{
+  		transform: rotate(45deg) translate(4px,2px);
+  		transition: all ease-in 500ms;
+  	}
+  .line2.disappear{
+  	transform: translateX(-5px);
+  	background:none;
+  	transition: all ease 200ms;
+  }
+  .line3.rotateUp{
+  	transform: rotate(-47deg) translate(10px,-6px);
+  	transition: all ease-in 500ms;
+  }
+}
+
+
