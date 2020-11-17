@@ -1,0 +1,45 @@
+footer{
+	display: flex;
+	flex-direction: column;
+}
+
+.social-links{
+	display: flex;
+	justify-content: space-evenly;
+
+	a{
+		text-decoration: none;
+
+		.ft-icon{
+			color: $clr-light;
+			font-size:1.3rem;
+			padding:.3em;
+			border:2px solid $clr-light;
+			border-radius:35%;
+		}
+	}
+
+}
+
+
+.attribution{
+	font-family: $ff-2;
+	margin: 0 auto;
+	margin-top: 2em;
+	// font-weight: bold;
+	position: relative;
+
+	&::before{
+		content: " ";
+		background: $clr-light;
+		width:30px;
+		height: 2px;
+		position:relative;
+	}
+
+	a{
+		text-decoration: none;
+		cursor: pointer;
+		color: rgb(255,146,255);
+	}
+}
