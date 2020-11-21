@@ -8,12 +8,8 @@
 
 <div align="center">
   <h3>
-    <a href="https://{https://interior-designn.netlify.app/}">
+    <a href="https://interior-designn.netlify.app/">
       Demo
-    </a>
-    <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
