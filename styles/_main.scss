@@ -3,15 +3,15 @@
 	padding-left: .5em;
 
 	&__title{
-		margin-bottom: .7em;
+		margin-bottom: .6em;
 		letter-spacing: 1px;
 		font-family: $ff-2;
-		font-size:2rem;
+		font-size:2.3rem;
 	}
 
 	&__details{
 		font-size:.9rem;
-		width:60%;
+		width:70%;
 		font-family: $ff-3;
 	}
 
@@ -28,6 +28,10 @@
 		}
 	}
 }
+
+
+
+
 
 .gallery{
 	margin-top: 1.5em;
