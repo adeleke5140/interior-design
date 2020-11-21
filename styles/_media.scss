@@ -1,0 +1,28 @@
+//media queries for desktop devices
+
+@media only screen and (min-width: 767px){
+
+	main{
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+		padding-right:5.5em;
+		margin-top:6em;
+	}
+	.product-summary{
+		padding-top:1.4em;
+		padding-left:3.5em;
+
+		&__details{
+			width: 50%;
+		}
+	}
+
+	.gallery__image{
+		width: initial;
+	}
+
+	.gallery__designer{
+		width:60%;
+		right:-4em;
+	}
+}
