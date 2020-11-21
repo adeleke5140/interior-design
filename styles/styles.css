@@ -280,8 +280,8 @@ footer {
 }
 
 @media only screen and (min-width: 767px) {
-  .nav-links li.nav-links__item:hover {
-    color: hotpink;
+  a:hover {
+    color: #f8c344;
     transition: all 0.4s ease;
   }
 
