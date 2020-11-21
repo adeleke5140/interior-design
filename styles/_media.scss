@@ -2,6 +2,11 @@
 
 @media only screen and (min-width: 767px){
 
+	.nav-links li.nav-links__item:hover{
+		color: hotpink;
+		transition: all 0.4s ease;
+	}
+
 	main{
 		display: grid;
 		grid-template-columns: 2fr 2fr;
@@ -24,5 +29,10 @@
 	.gallery__designer{
 		width:60%;
 		right:-4em;
+	}
+
+	footer .social-links{
+		padding-left:3em;
+		justify-content: normal;
 	}
 }
