@@ -29,6 +29,21 @@
 	}
 }
 
+//media queries for desktop devices
+
+@media only screen and (min-width: 767px){
+	.product-summary{
+		padding-top:6em;
+		padding-left:3.5em;
+
+		&__details{
+			width: 20%;
+		}
+	}
+}
+
+
+
 .gallery{
 	margin-top: 1.5em;
 
