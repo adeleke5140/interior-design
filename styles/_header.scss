@@ -64,6 +64,10 @@ header{
   z-index: 2;
  }
 
+ .menu:focus{
+   outline: none;
+ }
+
  .line{
    fill: none;
   stroke: $clr-light;
